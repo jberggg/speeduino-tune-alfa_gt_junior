@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sun Sep 26 16:16:22 CEST 2021"/>
+    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Mon Sep 27 21:55:02 CEST 2021"/>
     <versionInfo fileFormat="5.0" firmwareInfo="Speeduino+2021.03" nPages="14" signature="speeduino 202103"/>
     <page>
         <pcVariable name="tsCanId">"0"</pcVariable>
@@ -435,10 +435,12 @@
          100.0 
          100.0 
       </pcVariable>
+        <pcVariable name="prgm_out_selection">"1"</pcVariable>
         <pcVariable digits="0" name="fuelLoadMax">255.0</pcVariable>
         <pcVariable digits="0" name="ignLoadMax">255.0</pcVariable>
         <pcVariable digits="0" name="fuel2LoadMax">255.0</pcVariable>
         <pcVariable digits="0" name="ign2LoadMax">255.0</pcVariable>
+        <pcVariable name="prgm_out00Alias">Lambda Contrl Pwr</pcVariable>
         <pcVariable name="tsSpeedSource">"GPS Speed"</pcVariable>
         <pcVariable digits="0" name="tsPrimaryInjectorSize">0.0</pcVariable>
         <pcVariable name="tsInjSizeConstant">"cc/min"</pcVariable>
@@ -522,7 +524,7 @@
         <constant name="legacyMAP">"No"</constant>
         <constant name="baroCorr">"Off"</constant>
         <constant name="injLayout">"Semi-Sequential"</constant>
-        <constant name="perToothIgn">"Yes"</constant>
+        <constant name="perToothIgn">"No"</constant>
         <constant name="dfcoEnabled">"Off"</constant>
         <constant digits="0" name="aeColdTaperMax" units="C">60.0</constant>
         <constant digits="0" name="dutyLim" units="%">90.0</constant>
@@ -751,7 +753,7 @@
         <constant name="IgInv">"Going Low"</constant>
         <constant name="TrigPattern">"Missing Tooth"</constant>
         <constant name="TrigEdgeSec">"FALLING"</constant>
-        <constant name="fuelPumpPin">"11"</constant>
+        <constant name="fuelPumpPin">"23"</constant>
         <constant name="useResync">"No"</constant>
         <constant digits="1" name="sparkDur" units="ms">1.0</constant>
         <constant name="trigPatternSec">"Single tooth cam"</constant>
@@ -762,7 +764,7 @@
         <constant digits="0" name="SkipCycles" units="cycles">0.0</constant>
         <constant name="boostType">"Open Loop"</constant>
         <constant name="useDwellLim">"On"</constant>
-        <constant name="sparkMode">"Wasted Spark"</constant>
+        <constant name="sparkMode">"Single Channel"</constant>
         <constant name="TrigFilter">"Weak"</constant>
         <constant name="ignCranklock">"Off"</constant>
         <constant digits="1" name="dwellcrank" units="ms">3.0</constant>
@@ -970,8 +972,8 @@
       </constant>
     </page>
     <page number="5" size="128">
-        <constant name="egoAlgorithm">"No correction"</constant>
-        <constant name="egoType">"Wide Band"</constant>
+        <constant name="egoAlgorithm">"Simple"</constant>
+        <constant name="egoType">"Disabled"</constant>
         <constant name="boostEnabled">"Off"</constant>
         <constant name="vvtEnabled">"Off"</constant>
         <constant name="engineProtectType">"Spark Only"</constant>
@@ -1136,7 +1138,7 @@
         <constant digits="0" name="iacStepHyster" units="Steps">4.0</constant>
         <constant name="fanInv">"No"</constant>
         <constant name="fanEnable">"On/Off"</constant>
-        <constant name="fanPin">"12"</constant>
+        <constant name="fanPin">"23"</constant>
         <constant digits="0" name="fanSP" units="C">85.0</constant>
         <constant digits="0" name="fanHyster" units="C">2.0</constant>
         <constant digits="0" name="fanFreq" units="Hz">6.0</constant>
@@ -1438,7 +1440,7 @@
         <constant name="intcan_available">"Disable"</constant>
         <constant name="enable_intcan">"Enable"</constant>
         <constant name="caninput_sel0a">"Off"</constant>
-        <constant name="caninput_sel0b">"Off"</constant>
+        <constant name="caninput_sel0b">"Analog_local"</constant>
         <constant name="caninput_sel0extsourcea">"Via Secondary Serial"</constant>
         <constant name="caninput_sel0extsourceb">"Via Secondary Serial"</constant>
         <constant name="caninput_sel0extsourcec">"Via Internal CAN"</constant>
@@ -2138,7 +2140,7 @@
         <constant name="outputInverted7">"Active low"</constant>
         <constant digits="0" name="unused12_1" units="bits">255.0</constant>
         <constant cols="1" digits="0" name="outputPin" rows="8">
-         0.0 
+         25.0 
          0.0 
          0.0 
          0.0 
@@ -2147,7 +2149,7 @@
          0.0 
          0.0 
       </constant>
-        <constant name="outputPin0">"Disabled"</constant>
+        <constant name="outputPin0">"25"</constant>
         <constant name="outputPin1">"Disabled"</constant>
         <constant name="outputPin2">"Disabled"</constant>
         <constant name="outputPin3">"Disabled"</constant>
@@ -2156,7 +2158,7 @@
         <constant name="outputPin6">"Disabled"</constant>
         <constant name="outputPin7">"Disabled"</constant>
         <constant cols="1" digits="1" name="outputDelay" rows="8" units="S">
-         25.5 
+         5.0 
          25.5 
          25.5 
          25.5 
@@ -2166,7 +2168,7 @@
          25.5 
       </constant>
         <constant cols="1" digits="0" name="firstDataIn" rows="8">
-         255.0 
+         14.0 
          255.0 
          255.0 
          255.0 
@@ -2175,6 +2177,7 @@
          255.0 
          255.0 
       </constant>
+        <constant name="firstDataIn0">"RPM"</constant>
         <constant cols="1" digits="0" name="secondDataIn" rows="8">
          255.0 
          255.0 
@@ -2204,7 +2207,7 @@
          255.0 
       </constant>
         <constant cols="1" digits="0" name="firstTarget" rows="8">
-         -1.0 
+         500.0 
          -1.0 
          -1.0 
          -1.0 
@@ -2223,9 +2226,9 @@
          -1.0 
          -1.0 
       </constant>
-        <constant name="firstCompType0">"=="</constant>
+        <constant name="firstCompType0">"&gt;"</constant>
         <constant name="secondCompType0">"=="</constant>
-        <constant name="bitwise0">"XOR"</constant>
+        <constant name="bitwise0">"Disabled"</constant>
         <constant name="firstCompType1">"=="</constant>
         <constant name="secondCompType1">"=="</constant>
         <constant name="bitwise1">"XOR"</constant>
@@ -2347,7 +2350,12 @@
         <setting name="AFR" value="AFR"/>
     </settings>
     <userComments Comment="These are user comments that can be related to a particular setting or dialog.">
+        <userComment name="ego_sdelay" value=""/>
+        <userComment name="firstCompType0" value=""/>
+        <userComment name="outputInverted0" value=""/>
+        <userComment name="prgm_out_selection" value=""/>
         <userComment name="egoLimit" value=""/>
+        <userComment name="firstDataIn0" value=""/>
         <userComment name="TrigEdgeSec" value=""/>
         <userComment name="cltAdvValues" value=""/>
     </userComments>

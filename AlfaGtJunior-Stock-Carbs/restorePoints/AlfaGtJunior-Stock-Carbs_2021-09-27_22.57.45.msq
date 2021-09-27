@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Mon Sep 27 23:11:20 CEST 2021"/>
+    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: User Requested Save of Settings - &lt;br&gt;" writeDate="Mon Sep 27 22:57:45 CEST 2021"/>
     <versionInfo fileFormat="5.0" firmwareInfo="Speeduino+2021.03" nPages="14" signature="speeduino 202103"/>
     <page>
         <pcVariable name="tsCanId">"0"</pcVariable>

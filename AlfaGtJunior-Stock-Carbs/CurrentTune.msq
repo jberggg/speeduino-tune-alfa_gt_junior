@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Mon Sep 27 23:11:20 CEST 2021"/>
+    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Mon Nov 01 21:27:08 CET 2021"/>
     <versionInfo fileFormat="5.0" firmwareInfo="Speeduino+2021.03" nPages="14" signature="speeduino 202103"/>
     <page>
         <pcVariable name="tsCanId">"0"</pcVariable>
@@ -1853,8 +1853,8 @@
         <constant name="oilPressureProtEnbl">"Off"</constant>
         <constant name="fuelPressurePin">"A8"</constant>
         <constant name="oilPressurePin">"A0"</constant>
-        <constant digits="0" name="fuelPressureMin" units="psi">-18.0</constant>
-        <constant digits="0" name="fuelPressureMax" units="psi">168.0</constant>
+        <constant digits="0" name="fuelPressureMin" units="psi">-3.0</constant>
+        <constant digits="0" name="fuelPressureMax" units="psi">103.0</constant>
         <constant digits="0" name="oilPressureMin" units="psi">0.0</constant>
         <constant digits="0" name="oilPressureMax" units="psi">0.0</constant>
         <constant cols="1" digits="0" name="oilPressureProtRPM" rows="4" units="RPM">
@@ -2358,6 +2358,7 @@
         <userComment name="prgm_out_selection" value=""/>
         <userComment name="egoLimit" value=""/>
         <userComment name="firstDataIn0" value=""/>
+        <userComment name="dwellTable" value=""/>
         <userComment name="TrigEdgeSec" value=""/>
         <userComment name="cltAdvValues" value=""/>
     </userComments>

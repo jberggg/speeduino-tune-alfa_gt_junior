@@ -1,4 +1,4 @@
-# speeduino-tune-alfa_gt_junior
+# Alfa Romeo GT Junior Tune - Stock Engine & Carbs
 
 Speeduino Tune for **my** Alfa Romeo GT Junior.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Mon Nov 01 21:27:08 CET 2021"/>
+    <bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Fri Nov 26 23:27:02 CET 2021"/>
     <versionInfo fileFormat="5.0" firmwareInfo="Speeduino+2021.03" nPages="14" signature="speeduino 202103"/>
     <page>
         <pcVariable name="tsCanId">"0"</pcVariable>
@@ -754,7 +754,7 @@
         <constant name="IgInv">"Going Low"</constant>
         <constant name="TrigPattern">"Missing Tooth"</constant>
         <constant name="TrigEdgeSec">"FALLING"</constant>
-        <constant name="fuelPumpPin">"23"</constant>
+        <constant name="fuelPumpPin">"10"</constant>
         <constant name="useResync">"No"</constant>
         <constant digits="1" name="sparkDur" units="ms">1.0</constant>
         <constant name="trigPatternSec">"Single tooth cam"</constant>
@@ -1139,7 +1139,7 @@
         <constant digits="0" name="iacStepHyster" units="Steps">4.0</constant>
         <constant name="fanInv">"No"</constant>
         <constant name="fanEnable">"On/Off"</constant>
-        <constant name="fanPin">"23"</constant>
+        <constant name="fanPin">"9"</constant>
         <constant digits="0" name="fanSP" units="C">85.0</constant>
         <constant digits="0" name="fanHyster" units="C">2.0</constant>
         <constant digits="0" name="fanFreq" units="Hz">6.0</constant>
@@ -1853,8 +1853,8 @@
         <constant name="oilPressureProtEnbl">"Off"</constant>
         <constant name="fuelPressurePin">"A8"</constant>
         <constant name="oilPressurePin">"A0"</constant>
-        <constant digits="0" name="fuelPressureMin" units="psi">-3.0</constant>
-        <constant digits="0" name="fuelPressureMax" units="psi">103.0</constant>
+        <constant digits="0" name="fuelPressureMin" units="psi">-1.0</constant>
+        <constant digits="0" name="fuelPressureMax" units="psi">6.0</constant>
         <constant digits="0" name="oilPressureMin" units="psi">0.0</constant>
         <constant digits="0" name="oilPressureMax" units="psi">0.0</constant>
         <constant cols="1" digits="0" name="oilPressureProtRPM" rows="4" units="RPM">
@@ -2141,7 +2141,7 @@
         <constant name="outputInverted7">"Active low"</constant>
         <constant digits="0" name="unused12_1" units="bits">255.0</constant>
         <constant cols="1" digits="0" name="outputPin" rows="8">
-         25.0 
+         12.0 
          0.0 
          0.0 
          0.0 
@@ -2150,7 +2150,7 @@
          0.0 
          0.0 
       </constant>
-        <constant name="outputPin0">"25"</constant>
+        <constant name="outputPin0">"12"</constant>
         <constant name="outputPin1">"Disabled"</constant>
         <constant name="outputPin2">"Disabled"</constant>
         <constant name="outputPin3">"Disabled"</constant>
@@ -2344,7 +2344,6 @@
     </page>
     <settings Comment="These setting are only used if this msq is opened without a project.">
         <setting name="enablehardware_test_OFF" value="enablehardware_test_OFF"/>
-        <setting name="SPEED_DENSITY" value="SPEED_DENSITY"/>
         <setting name="CAN_COMMANDS_OFF" value="CAN_COMMANDS_OFF"/>
         <setting name="CELSIUS" value="CELSIUS"/>
         <setting name="resetcontrol_standard" value="resetcontrol_standard"/>

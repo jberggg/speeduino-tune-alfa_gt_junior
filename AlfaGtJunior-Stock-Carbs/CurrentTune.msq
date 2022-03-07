@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-    <bibliography author="TunerStudio MS 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Sat Feb 12 00:00:58 CET 2022"/>
+    <bibliography author="TunerStudio MS Lite! 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Mon Mar 07 22:24:07 CET 2022"/>
     <versionInfo fileFormat="5.0" firmwareInfo="Speeduino+2022.02" nPages="14" signature="speeduino 202202"/>
     <page>
         <pcVariable name="tsCanId">"0"</pcVariable>
@@ -443,23 +443,6 @@
         <pcVariable name="AUXin00Alias">Aux0</pcVariable>
         <pcVariable name="AUXin01Alias">Aux1</pcVariable>
         <pcVariable name="prgm_out00Alias">Lambda Pwr Cntrl</pcVariable>
-        <pcVariable name="tsSpeedSource">"GPS Speed"</pcVariable>
-        <pcVariable digits="0" name="tsPrimaryInjectorSize">0.0</pcVariable>
-        <pcVariable name="tsInjSizeConstant">"cc/min"</pcVariable>
-        <pcVariable name="tsLogPowerFields">"Log HP &amp; Tq"</pcVariable>
-        <pcVariable name="tsLogPerfFields">"Off"</pcVariable>
-        <pcVariable name="tsFuelConsumptionUnits">"US Gallons"</pcVariable>
-        <pcVariable name="tsDistanceUnits">"Miles Per Hour"</pcVariable>
-        <pcVariable digits="0" name="tsVehicleWeight">3450.0</pcVariable>
-        <pcVariable name="tsWeightUnits">"lbs"</pcVariable>
-        <pcVariable digits="2" name="tsVehicleDragCoef">0.34</pcVariable>
-        <pcVariable digits="0" name="tsTirePressure" units="psi">32.0</pcVariable>
-        <pcVariable digits="1" name="tsFrontalArea">19.3</pcVariable>
-        <pcVariable name="tsFrontalUnits">"sqft"</pcVariable>
-        <pcVariable digits="1" name="tsTireDiameter" units="in">25.5</pcVariable>
-        <pcVariable digits="2" name="tsTransGearRatio" units=":1">1.0</pcVariable>
-        <pcVariable digits="2" name="tsFinalDriveRatio" units=":1">3.7</pcVariable>
-        <pcVariable digits="0" name="tsEtRollOut" units="in">0.0</pcVariable>
     </page>
     <page number="0" size="128">
         <constant digits="1" name="aseTaperTime" units="S">1.0</constant>
@@ -537,7 +520,7 @@
         <constant digits="0" name="tpsMax" units="ADC">28.0</constant>
         <constant digits="0" name="mapMin" units="kpa">10.0</constant>
         <constant digits="0" name="mapMax" units="kpa">260.0</constant>
-        <constant digits="0" name="fpPrime" units="s">5.0</constant>
+        <constant digits="0" name="fpPrime" units="s">7.0</constant>
         <constant digits="1" name="stoich" units=":1">14.7</constant>
         <constant digits="0" name="oddfire2" units="deg">0.0</constant>
         <constant digits="0" name="oddfire3" units="deg">0.0</constant>
@@ -594,7 +577,7 @@
         <constant name="CTPSPin">"3"</constant>
         <constant name="CTPSPolarity">"Inverted"</constant>
         <constant name="CTPSEnabled">"Off"</constant>
-        <constant name="idleAdvEnabled">"Added"</constant>
+        <constant name="idleAdvEnabled">"Off"</constant>
         <constant name="idleAdvAlgorithm">"CTPS"</constant>
         <constant name="idleAdvDelay">"0.0"</constant>
         <constant digits="0" name="idleAdvRPM" units="rpm">1400.0</constant>
@@ -691,22 +674,22 @@
     </page>
     <page number="2" size="288">
         <constant cols="16" digits="0" name="advTable1" rows="16" units="deg">
-         12.0 10.0 13.0 11.0 13.0 17.0 21.0 23.0 30.0 31.0 33.0 39.0 39.0 40.0 40.0 41.0 
-         12.0 9.0 15.0 12.0 14.0 18.0 21.0 23.0 30.0 31.0 33.0 39.0 39.0 40.0 40.0 41.0 
-         12.0 10.0 15.0 12.0 14.0 18.0 21.0 23.0 28.0 29.0 31.0 34.0 34.0 35.0 35.0 36.0 
-         12.0 10.0 15.0 13.0 15.0 18.0 21.0 23.0 28.0 29.0 31.0 34.0 34.0 35.0 35.0 36.0 
-         12.0 10.0 13.0 13.0 15.0 19.0 21.0 23.0 28.0 29.0 31.0 34.0 34.0 35.0 35.0 36.0 
-         12.0 10.0 13.0 13.0 16.0 19.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 10.0 13.0 13.0 16.0 19.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 10.0 13.0 14.0 16.0 19.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 10.0 13.0 14.0 16.0 20.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 10.0 13.0 14.0 17.0 20.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 10.0 13.0 14.0 17.0 20.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 10.0 13.0 14.0 17.0 20.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 11.0 14.0 14.0 17.0 21.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 11.0 12.0 15.0 18.0 21.0 22.0 24.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 11.0 12.0 15.0 18.0 21.0 22.0 25.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
-         12.0 11.0 12.0 15.0 18.0 22.0 22.0 25.0 29.0 30.0 32.0 34.0 34.0 36.0 36.0 37.0 
+         12.0 10.0 12.0 13.0 14.0 16.0 17.0 19.0 20.0 21.0 23.0 26.0 29.0 32.0 32.0 32.0 
+         12.0 10.0 12.0 13.0 14.0 16.0 17.0 19.0 20.0 21.0 23.0 26.0 29.0 32.0 32.0 32.0 
+         12.0 10.0 12.0 13.0 14.0 16.0 17.0 19.0 20.0 22.0 24.0 27.0 29.0 32.0 32.0 32.0 
+         12.0 10.0 12.0 13.0 14.0 16.0 18.0 19.0 21.0 22.0 24.0 27.0 30.0 33.0 33.0 33.0 
+         12.0 10.0 12.0 14.0 15.0 17.0 18.0 20.0 21.0 22.0 24.0 27.0 30.0 33.0 33.0 33.0 
+         12.0 11.0 13.0 14.0 15.0 17.0 18.0 20.0 21.0 22.0 25.0 27.0 30.0 33.0 33.0 33.0 
+         12.0 11.0 13.0 14.0 15.0 17.0 18.0 20.0 21.0 23.0 25.0 28.0 30.0 33.0 33.0 33.0 
+         12.0 11.0 13.0 14.0 15.0 17.0 18.0 20.0 21.0 23.0 25.0 28.0 31.0 33.0 33.0 33.0 
+         12.0 11.0 13.0 14.0 15.0 17.0 19.0 20.0 22.0 23.0 26.0 28.0 31.0 34.0 34.0 34.0 
+         12.0 11.0 13.0 15.0 16.0 18.0 19.0 21.0 22.0 24.0 26.0 29.0 31.0 34.0 34.0 34.0 
+         12.0 11.0 13.0 15.0 16.0 18.0 19.0 21.0 22.0 24.0 27.0 29.0 32.0 34.0 34.0 34.0 
+         12.0 11.0 13.0 15.0 16.0 18.0 20.0 21.0 23.0 24.0 27.0 30.0 32.0 35.0 35.0 35.0 
+         12.0 12.0 14.0 15.0 16.0 18.0 20.0 21.0 23.0 25.0 28.0 30.0 33.0 35.0 35.0 35.0 
+         12.0 12.0 14.0 16.0 17.0 19.0 20.0 22.0 23.0 25.0 28.0 30.0 33.0 35.0 35.0 35.0 
+         12.0 12.0 14.0 16.0 17.0 19.0 21.0 22.0 24.0 26.0 29.0 31.0 33.0 36.0 36.0 36.0 
+         12.0 12.0 14.0 16.0 17.0 19.0 21.0 22.0 24.0 26.0 29.0 31.0 34.0 36.0 36.0 36.0 
       </constant>
         <constant cols="1" digits="0" name="rpmBins2" rows="16" units="RPM">
          500.0 
@@ -727,21 +710,21 @@
          6500.0 
       </constant>
         <constant cols="1" digits="1" name="mapBins1" rows="16" units="% TPS">
+         5.0 
          10.0 
+         15.0 
          20.0 
-         26.0 
-         38.0 
-         46.0 
-         50.0 
-         56.0 
-         60.0 
-         66.0 
-         70.0 
-         76.0 
-         80.0 
-         86.0 
-         90.0 
-         96.0 
+         25.0 
+         30.0 
+         35.0 
+         40.0 
+         45.0 
+         53.0 
+         61.0 
+         69.0 
+         77.0 
+         85.0 
+         93.0 
          100.0 
       </constant>
     </page>
@@ -770,7 +753,7 @@
         <constant name="TrigFilter">"Off"</constant>
         <constant name="ignCranklock">"Off"</constant>
         <constant digits="1" name="dwellcrank" units="ms">3.3</constant>
-        <constant digits="1" name="dwellrun" units="ms">2.0</constant>
+        <constant digits="1" name="dwellrun" units="ms">2.2</constant>
         <constant digits="0" name="numTeeth" units="teeth">60.0</constant>
         <constant digits="0" name="missingTeeth" units="teeth">2.0</constant>
         <constant digits="0" name="crankRPM" units="rpm">400.0</constant>
@@ -803,7 +786,7 @@
          69.0 
          80.0 
       </constant>
-        <constant digits="0" name="dwellLim" units="ms">5.0</constant>
+        <constant digits="0" name="dwellLim" units="ms">7.0</constant>
         <constant cols="1" digits="0" name="dwellRates" rows="6" units="%">
          99.0 
          101.0 
@@ -814,17 +797,17 @@
       </constant>
         <constant cols="1" digits="0" name="iatRetBins" rows="6" units="C">
          0.0 
-         82.0 
-         94.0 
-         111.0 
-         114.0 
+         31.0 
+         52.0 
+         100.0 
+         125.0 
          128.0 
       </constant>
         <constant cols="1" digits="0" name="iatRetRates" rows="6" units="deg">
          0.0 
          0.0 
-         0.0 
-         0.0 
+         2.0 
+         5.0 
          6.0 
          0.0 
       </constant>
@@ -842,18 +825,18 @@
         <constant digits="0" name="ADCFILTER_MAP" units="%">0.0</constant>
         <constant digits="0" name="ADCFILTER_BARO" units="%">0.0</constant>
         <constant cols="1" digits="0" name="cltAdvBins" rows="6" units="C">
-         -12.0 
-         1.0 
-         18.0 
-         31.0 
+         -18.0 
+         -4.0 
+         11.0 
+         32.0 
          45.0 
-         84.0 
+         60.0 
       </constant>
         <constant cols="1" digits="0" name="cltAdvValues" rows="6" units="deg">
-         0.0 
-         0.0 
-         2.0 
-         3.0 
+         4.0 
+         4.0 
+         4.0 
+         4.0 
          2.0 
          0.0 
       </constant>
@@ -2084,7 +2067,7 @@
       </constant>
     </page>
     <page number="12" size="128">
-        <constant name="outputInverted0">"Active low"</constant>
+        <constant name="outputInverted0">"Active high"</constant>
         <constant name="outputInverted1">"Active low"</constant>
         <constant name="outputInverted2">"Active low"</constant>
         <constant name="outputInverted3">"Active low"</constant>
@@ -2119,7 +2102,7 @@
         <constant name="outputPin6">"Disabled"</constant>
         <constant name="outputPin7">"Disabled"</constant>
         <constant cols="1" digits="1" name="outputDelay" rows="8" units="S">
-         10.0 
+         5.0 
          25.5 
          25.5 
          25.5 
@@ -2185,7 +2168,7 @@
          255.0 
       </constant>
         <constant cols="1" digits="0" name="firstTarget" rows="8">
-         500.0 
+         450.0 
          -1.0 
          -1.0 
          -1.0 
@@ -2204,7 +2187,7 @@
          -1.0 
          -1.0 
       </constant>
-        <constant name="firstCompType0">"== (equal)"</constant>
+        <constant name="firstCompType0">"&gt;= (greater/equal)"</constant>
         <constant name="secondCompType0">"== (equal)"</constant>
         <constant name="bitwise0">"Disabled"</constant>
         <constant name="firstCompType1">"== (equal)"</constant>
@@ -2277,22 +2260,22 @@
     </page>
     <page number="13" size="288">
         <constant cols="16" digits="0" name="advTable2" rows="16" units="deg">
-         68.0 68.0 68.0 68.0 68.0 69.0 69.0 69.0 69.0 69.0 70.0 70.0 70.0 70.0 70.0 71.0 
-         71.0 71.0 71.0 71.0 72.0 72.0 72.0 72.0 72.0 73.0 73.0 73.0 73.0 73.0 73.0 74.0 
-         74.0 74.0 74.0 74.0 75.0 75.0 75.0 75.0 75.0 76.0 76.0 76.0 76.0 76.0 77.0 77.0 
-         77.0 77.0 77.0 78.0 78.0 78.0 78.0 78.0 79.0 79.0 79.0 79.0 79.0 80.0 80.0 80.0 
-         80.0 80.0 81.0 81.0 81.0 81.0 81.0 82.0 82.0 82.0 82.0 82.0 82.0 83.0 83.0 83.0 
-         83.0 83.0 84.0 84.0 84.0 84.0 84.0 85.0 85.0 85.0 85.0 85.0 86.0 86.0 86.0 86.0 
-         86.0 87.0 87.0 87.0 87.0 87.0 88.0 88.0 88.0 88.0 88.0 89.0 89.0 89.0 89.0 89.0 
-         90.0 90.0 90.0 90.0 90.0 90.0 91.0 91.0 91.0 91.0 91.0 92.0 92.0 92.0 92.0 92.0 
-         93.0 93.0 93.0 93.0 93.0 94.0 94.0 94.0 94.0 94.0 95.0 95.0 95.0 95.0 95.0 96.0 
-         96.0 96.0 96.0 96.0 97.0 97.0 97.0 97.0 97.0 98.0 98.0 98.0 98.0 98.0 99.0 99.0 
-         99.0 99.0 99.0 99.0 100.0 100.0 100.0 100.0 100.0 101.0 101.0 101.0 101.0 101.0 102.0 102.0 
-         102.0 102.0 102.0 103.0 103.0 103.0 103.0 103.0 104.0 104.0 104.0 104.0 104.0 105.0 105.0 105.0 
-         105.0 105.0 106.0 106.0 106.0 106.0 106.0 107.0 107.0 107.0 107.0 107.0 108.0 108.0 108.0 108.0 
-         108.0 108.0 109.0 109.0 109.0 109.0 109.0 110.0 110.0 110.0 110.0 110.0 111.0 111.0 111.0 111.0 
-         111.0 112.0 112.0 112.0 112.0 112.0 113.0 113.0 113.0 113.0 113.0 114.0 114.0 114.0 114.0 114.0 
-         115.0 115.0 115.0 115.0 115.0 116.0 116.0 116.0 116.0 116.0 117.0 117.0 117.0 117.0 117.0 117.0 
+         68.0 68.0 68.0 68.0 68.0 69.0 69.0 69.0 69.0 69.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
+         70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 70.0 
       </constant>
         <constant cols="1" digits="0" name="rpmBins3" rows="16" units="RPM">
          15800.0 
@@ -2348,6 +2331,7 @@
         <userComment name="egoLimit" value=""/>
         <userComment name="firstDataIn0" value=""/>
         <userComment name="dwellTable" value=""/>
+        <userComment name="bitwise0" value=""/>
         <userComment name="TrigEdgeSec" value=""/>
         <userComment name="cltAdvValues" value=""/>
     </userComments>
